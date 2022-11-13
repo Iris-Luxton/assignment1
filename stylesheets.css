@@ -6,13 +6,19 @@ body, html {
     margin: 0;
     text-align: center;
   }
+h1 {
+    text-shadow: 1px 1px white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+}
 .bg {
 /* The image used */
     background-image: url("oyo.jpg");
-
+    background-attachment: fixed;
 /* Full height */
     height: 100%; 
-
+    width: 100%;
 /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +31,8 @@ ul {
     overflow: hidden;
     width: 100%;
     background-color: #FFFFFF; 
-    opacity: 0.65; 
+    opacity: 0.68; 
+    font-weight: bolder;
 }
 /* Add a gray right border to all list items, except the last item (last-child) */
 li {
@@ -33,23 +40,25 @@ li {
     display: inline;
     float: left;
 } 
-li:last-child {
-    border-right: none;
-}
 li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
     color: black;
 }
 a {
     display: block;
     padding: 8px;
-    background-color: #dddddd;
 }
 li a:hover {
     background-color: red;
+    color: black;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 #navbar {
     padding: 14px 16px;
@@ -57,31 +66,42 @@ li a:hover {
     color: black;
     border: none;
     font-weight: 900;
-    font-size: largers;
+    font-size: larger;
+}
+#white {
+    opacity: 1;
 }
 .search-container {
-    float: right;
     padding: 0;
     margin: 0;
-    background: #ddd;
-    height: 45px;
+    height: 50px;
     width: auto;
-  }
+    display: inline-block;
+}
  /* Style the submit button */
-form.example button {
+form.search button {
     float: right;
     width: 30%;
-    padding: 10px;
+    padding: 13px;
     font-size: 17px;    
     cursor: pointer;
   }
-  form.example input {
+form.search input[type=text] {
+    padding: 13px;
+    font-size: 17px;
     float: left;
     width: 70%;
-    padding: 10px;
-    font-size: 17px;
-    cursor: pointer;
   }
-  form.example button:hover {
+form.search button:hover {
     background: #e95f10;
-  }
+    padding: 13px;
+}
+.contact-form {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+    height: 70%;
+	background: rgba(0, 0, 0, 0.5);
+}
