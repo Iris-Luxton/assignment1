@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+  }
+.bg {
+/* The image used */
+    background-image: url("oyo.jpg");
+
+/* Full height */
+    height: 100%; 
+
+/* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #FFFFFF; 
+    opacity: 0.65; 
+}
+/* Add a gray right border to all list items, except the last item (last-child) */
+li {
+    border: 2px solid black;
+    display: inline;
+    float: left;
+} 
+li:last-child {
+    border-right: none;
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+li a:hover {
+    background-color: red;
+}
+#navbar {
+    padding: 14px 16px;
+    text-align: center;
+    color: black;
+    border: none;
+    font-weight: 900;
+    font-size: largers;
+}
+.search-container {
+    float: right;
+    padding: 0;
+    margin: 0;
+    background: #ddd;
+    height: 45px;
+    width: auto;
+  }
+ /* Style the submit button */
+form.example button {
+    float: right;
+    width: 30%;
+    padding: 10px;
+    font-size: 17px;    
+    cursor: pointer;
+  }
+  form.example input {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  form.example button:hover {
+    background: #e95f10;
+  }
