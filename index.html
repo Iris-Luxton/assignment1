@@ -1,43 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>login page</title>
     <link href="stylesheets.css" rel="stylesheet" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="bg">
-        <header>
-            <hgroup>
-                <h1>Welcome to login!</h1>
-            </hgroup>
-        </header>
-            <nav >
-                <ul>
-                    <li id = "navbar">Navbar</li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Dropdown</a></li>
-                    <li><a href="#">Affiliates</a></li>    
-                </ul> 
-                <div class="search-container" id = "white">
-                        <form class = "search" action="#">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit">Search</button>
-                        </form>
-                </div> 
-            </nav>
-            <section>
-                <div class="contact-form">
-                    <h1>Enter here</h1>
-                    <form action="">
-                        <p>Enter username</p>
-                        <input placeholder="Enter Email" type="email">
-                        <p>Passwrod</p><input placeholder="Enter Password" type="password"> <input type="submit" value="Sign in">
-                        <p><input type="checkbox">Remember Me</p>
-                    </form>
-                </div>
-            </section>
+      <header>
+        <hgroup>
+          <h1>Welcome to login!</h1>
+        </hgroup>
+      </header>
+      <nav>
+        <ul>
+          <li id="navbar">Navbar</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Dropdown</a></li>
+          <li><a href="#">Affiliates</a></li>
+        </ul>
+        <div class="search-container" id="white">
+          <form class="search" action="#">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <section>
+        <div class="login-form">
+          <h1>Enter here</h1>
+          <form class="flex-container" action="">
+            <div class="mini-flex-container">
+              <p>&ensp;Enter username&ensp;</p>
+              <input placeholder="username" type="username" />
+              <p>&ensp;Enter password&ensp;</p>
+              <input placeholder="password" type="password" />
+            </div>
+            <div>
+              <table>
+                <tr>
+                    <td>
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="sex" value="male"/>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="sex" value="female"/>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <label for="nope">Nope</label>
+                        <input type="radio" id="nope" name="sex" value="nope"/>  
+                    </td>
+                </tr>
+              </table>
+            </div>
+            <br />
+            <button id = "submit" type="button">LOGIN</button>
+            <br /> 
+          </form>
+          <div class = "mini-flex-container">
+            <p>Not registered?</p>
+            <nav><a href = "#">Create an account</a></nav>
+          </div>
+          <div class="popup">
+            <h2>Disclaimers</h2>
+            <dl>
+                <dt>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</dt>
+                <dt>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</dt><br>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p><br>
+                <dt>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</dt>   
+                <dt>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores</dt> 
+          </dl>
+        </div>
+        </div>
+      </section>
     </div>
-</body>
+  </body>
 </html>
