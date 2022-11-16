@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>login page</title>
     <link href="stylesheets.css" rel="stylesheet" />
+    <script src="main.js"></script>
   </head>
   <body>
     <div class="bg">
@@ -17,7 +18,14 @@
           <li id="navbar">Navbar</li>
           <li><a href="#">Home</a></li>
           <li><a href="#">Link</a></li>
-          <li><a href="#">Dropdown</a></li>
+          <li>
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">About</a>
+                <a href="#">Career</a>
+                <a href="#">Contact</a>
+            </div>
+          </li>       
           <li><a href="#">Affiliates</a></li>
         </ul>
         <div class="search-container" id="white">
