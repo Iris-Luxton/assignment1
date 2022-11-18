@@ -4,12 +4,13 @@
 body, html {
     margin: 0%;
     text-align: center;
-    padding: 0;
+    padding: 0%;
+    font-size: calc(11px + 0.390625vw)
   }
 h1 {
-    text-shadow: 1px 1px white;
+    text-shadow: 0.1rem 0.1rem white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 55px;
+    font-size: 3.3rem;
     font-weight: 200;
     position: relative;
     margin-top: 3%;
@@ -27,14 +28,14 @@ h1 {
     background-size: cover;
     z-index: -1;
     height:100%; 
-    padding: 0; 
-    margin: 0; 
+    padding: 0%; 
+    margin: 0%; 
     overflow-y:auto
     }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     overflow: hidden;
     width: 100%;
     background-color: #FFFFFF; 
@@ -44,14 +45,14 @@ ul {
 }
 /* Add a gray right border to all list items, except the last item (last-child) */
 li {
-    border: 2px solid black;
+    border: 0.1rem solid black;
     display: inline;
     float: left;
 } 
 li a {
     display: block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.9rem 0.9rem;
     color: black;
 }
 li a:hover {
@@ -60,7 +61,7 @@ li a:hover {
 li button {
     display: block;
     text-align: center;
-    padding: 13.78px 38px;
+    padding: 0.9rem 3.45rem;
     color: black;
     font-weight: bold;
 }
@@ -68,7 +69,7 @@ li button:hover{
     background-color: red;
 }
 .dropbtn {
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
     position: relative;
@@ -77,23 +78,23 @@ li button:hover{
 .dropbtn:before {
     content: "";
     position: absolute;
-    right: 10px;
-    top: 16px;
+    right: 0.9rem;
+    top: 1rem;
     width: 0; 
     height: 0; 
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #f00;
+    border-left: 0.7rem solid transparent;
+    border-right: 0.7rem solid transparent;
+    border-top: 0.7rem solid #f00;
 }
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 155px;
+    min-width: 12rem;
     overflow: auto;
 }
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 0.8rem 1rem;
     text-decoration: none;
     display: block;
 }
@@ -106,7 +107,7 @@ nav {
     justify-content: space-between;
 }
 #navbar {
-    padding: 14px 16px;
+    padding: 0.8rem 1rem;
     text-align: center;
     color: black;
     border: none;
@@ -118,30 +119,29 @@ nav {
     color: white;
 }
 .search-container {
-    padding: 0;
-    margin: 0;
-    height: 50px;
+    padding: 0%;
+    margin: 0%;
     width: auto;
     display: inline-block;
 }
 form.search button {
     float: right;
     width: 30%;
-    padding: 13px;
-    font-size: 17px;    
+    padding: 0.8rem;
+    font-size: 1.1rem;    
     cursor: pointer;
-    border: 2px solid green;
+    border: 0.1rem solid green;
     color: green;
   }
 form.search input[type=text] {
-    padding: 13px;
-    font-size: 17px;
+    padding: 0.8rem;
+    font-size: 1.1rem;
     float: left;
     width: 70%;
   }
 form.search button:hover {
     background: #e95f10;
-    padding: 13px;
+    padding: 0.8rem;
 }
 .login-form {
 	position: relative;
@@ -151,7 +151,7 @@ form.search button:hover {
 	width: 70vw;
     height: 100vh;
 	background: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    border-radius: 0.4rem;
 }
 p, label {
     color: white;
@@ -171,37 +171,40 @@ p, label {
     background-color: rgb(19, 175, 19);
     color: white;
     margin: rgb(19, 175, 19);
-    padding: 8px 2px;
-    border: 2px solid black;
+    padding: 0.5rem 0.2rem;
+    border: 0.1rem solid black;
 }
 .popup{
     background-color: #ffffff;
     width: 40%;
-    padding: 10px 30px;
+    padding: 0.3rem 1.5rem;
     position: relative;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-55%);
     left: 50%;
     top: 20%;
-    height: 40%;
-    border-radius: 5px;
+    height: 36%;
+    border-radius: 0.4rem;
     text-align: center;
     overflow: auto;
+    font-size: 0.5rem;
 }
 .popup h2{
-    margin: 0;
-    padding: 0;
-    font-size: 45px;
+    margin: 0%;
+    padding: 0%;
+    font-size: 2.3rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
 }
 .popup p {
-    padding: 10px 10px;
+    padding: 0.5rem 0.5rem;
     background-color: rgb(151, 159, 241);
-    margin: auto 0px;
-    border-radius: 5px;
+    margin: auto 0rem;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
 }
 dl, dt, dd {
     text-align: left;
     display: list-item;
     list-style-type: disc;
+    font-size: 0.8rem;
 } 
