@@ -39,12 +39,12 @@
         <div class="login-form">
           <br>
           <h1>Enter here</h1>
-          <form class="flex-container">
+          <form class="flex-container" method="POST" action="http://localhost:3000/profile">
             <div class="mini-flex-container">
               <p>&ensp;Enter username&ensp;</p>
-              <input placeholder="username" type="username" />
+              <input placeholder="username" type="username" name="username"/>
               <p>&ensp;Enter password&ensp;</p>
-              <input placeholder="password" type="password" />
+              <input placeholder="password" type="password" name="password"/>
             </div>
             <br>
             <div>
@@ -76,7 +76,7 @@
               </table>
             </div>
             <br>
-            <button id = "submit" type="button">LOGIN</button>
+            <button id = "submit" type="submit">LOGIN</button>
             <br> 
           </form>
           <div class = "mini-flex-container">
@@ -89,8 +89,8 @@
             <h2>Disclaimers</h2>
             <dl>
                 <dt>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</dt>
-                <dt>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</dt><br>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p><br>
+                <dt>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</dt>
+                <dt>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</dt>
                 <dt>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</dt>   
                 <dt>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores</dt> 
           </dl>
